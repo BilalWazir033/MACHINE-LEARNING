@@ -1,45 +1,157 @@
-# Python virtual environments
+# ==============================
+
+# Python Virtual Environments
+
+# ==============================
+
 .venv/
 venv/
 env/
+ENV/
 
-# Python cache files
-__pycache__/
+# ==============================
+
+# Python Cache Files
+
+# ==============================
+
+**pycache**/
 *.py[cod]
 *$py.class
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# ==============================
 
-# Testing and coverage
+# Jupyter Notebook
+
+# ==============================
+
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+.jupyter/
+
+# ==============================
+
+# Testing and Coverage
+
+# ==============================
+
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
 
-# IDE and editor settings
-.vscode/
+# ==============================
 
-# Environment variables and secrets
+# IDE and Editor Settings
+
+# ==============================
+
+.vscode/
+.idea/
+
+# ==============================
+
+# Environment Variables and Secrets
+
+# ==============================
+
 .env
 .env.*
 !.env.example
 
-# OS-generated files
+# ==============================
+
+# OS-Generated Files
+
+# ==============================
+
 .DS_Store
 Thumbs.db
 desktop.ini
 
+# ==============================
+
 # Logs
+
+# ==============================
+
 *.log
 
-# Model files and large generated artifacts
+# ==============================
+
+# Machine Learning Model Files
+
+# ==============================
+
 *.pkl
+*.pickle
 *.joblib
 *.h5
+*.hdf5
 *.pt
 *.pth
 *.onnx
+*.keras
+*.model
+*.safetensors
 
-# Temporary files
+# ==============================
+
+# Large ML Artifacts and Outputs
+
+# ==============================
+
+mlruns/
+mlartifacts/
+wandb/
+runs/
+lightning_logs/
+checkpoints/
+outputs/
+logs/
+
+# ==============================
+
+# Downloaded Datasets
+
+# ==============================
+
+# Keep dataset folders, but ignore their contents.
+
+# Remove these rules if you want to push small datasets.
+
+data/
+datasets/
+raw_data/
+
+# ==============================
+
+# Temporary Files
+
+# ==============================
+
 *.tmp
 *.temp
+*.swp
+*.bak
+
+# ==============================
+
+# Build and Distribution Files
+
+# ==============================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ==============================
+
+# Python Type Checking and Linting
+
+# ==============================
+
+.mypy_cache/
+.pyright/
+.ruff_cache/
