@@ -48,3 +48,7 @@ class KMeans:
 
         return np.array(new_centroids)
 
+
+    git add .
+    git commit -m "KMeans clustering implementation from scratch"
+    git push origin main
